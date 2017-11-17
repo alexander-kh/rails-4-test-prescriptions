@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - TwitterRubyGem/6.1.0
+      Authorization:
+      - Basic QVBJa0dZbXdkNlM2RFhsb1g3bGV2MFgxVDpIaFJ0UXZxOWJ4SDlBcW9FcTFGMml4RjVmSDlsclZjRGlvdEg1bGpCU1FQdlhaWHBrNw==
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=UTF-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '152'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 13 Oct 2017 17:19:24 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Fri, 13 Oct 2017 17:19:24 GMT
+      Ml:
+      - A
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A150791516490310558; Expires=Sun, 13 Oct 2019 17:19:24 UTC; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_qKaKuhX/uUDOKgARvHekaQ=="; Expires=Sun, 13 Oct 2019
+        17:19:24 UTC; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 437643b2d980c6300b61893fdf57cfdc
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '144'
+      X-Transaction:
+      - 00adbf270047ffe4
+      X-Tsa-Request-Body-Time:
+      - '1'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAIKr2gAAAAAAreMpPKj3J7gNrFzBsjQnGBrKZbA%3DyWkkQRPAIgt7DunE52PX7qrgcP9YoOfxLYlHteEwTxTM1wF1md"}'
+    http_version: 
+  recorded_at: Fri, 13 Oct 2017 17:19:25 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?screen_name=noelrap
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/6.1.0
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAIKr2gAAAAAAreMpPKj3J7gNrFzBsjQnGBrKZbA%3DyWkkQRPAIgt7DunE52PX7qrgcP9YoOfxLYlHteEwTxTM1wF1md
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1118'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Fri, 13 Oct 2017 17:19:25 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Fri, 13 Oct 2017 17:19:25 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A150791516511745766; Expires=Sun, 13 Oct 2019 17:19:25 UTC; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_ONZkMu+TEAQ9LvkxMZ5W+g=="; Expires=Sun, 13 Oct 2019
+        17:19:25 UTC; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - a16e1edf79f2023e8df2652c872c00a2
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '899'
+      X-Rate-Limit-Reset:
+      - '1507916065'
+      X-Response-Time:
+      - '147'
+      X-Transaction:
+      - 00a7b03a00e744be
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1515231,"id_str":"1515231","name":"Noel Rappin","screen_name":"noelrap","location":"Chicago
+        IL","profile_location":null,"description":"Noel Rappin is a developer at Table
+        XI. He is the author of Take My Money: Accepting Payment on the Web and Rails
+        4 Test Prescriptions","url":"http:\/\/t.co\/2Mt0aaFfGL","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/2Mt0aaFfGL","expanded_url":"http:\/\/www.noelrappin.com","display_url":"noelrappin.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":2675,"friends_count":787,"listed_count":226,"created_at":"Mon
+        Mar 19 15:10:21 +0000 2007","favourites_count":790,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":12994,"lang":"en","status":{"created_at":"Fri
+        Oct 13 03:34:50 +0000 2017","id":918681408868159489,"id_str":"918681408868159489","text":"The
+        https:\/\/t.co\/Ik23k7AoaC alerts are running about a minute ahead of my allegedly
+        live Cubs broadcast and it\u2019s kind of weirding me out.","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/Ik23k7AoaC","expanded_url":"http:\/\/MLB.com","display_url":"MLB.com","indices":[4,27]}]},"source":"\u003ca
+        href=\"http:\/\/twitterrific.com\" rel=\"nofollow\"\u003eTwitterrific for
+        Mac\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"9AE4E8","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/40008602\/head_shot_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/40008602\/head_shot_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/1515231\/1471398378","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"E0FF92","profile_text_color":"000000","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"}'
+    http_version: 
+  recorded_at: Fri, 13 Oct 2017 17:19:25 GMT
+recorded_with: VCR 3.0.3
